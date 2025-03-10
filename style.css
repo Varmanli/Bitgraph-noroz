@@ -115,8 +115,24 @@ cicle background
   background: #4620cd;
   animation: moveHorizontally 6s ease-in-out infinite alternate;
 }
-
-/* کی‌فریم برای انیمیشن حرکت افقی */
+@media (max-width: 900px) {
+  .bg-blue-2 {
+    width: 52vw;
+    height: 52vw;
+  }
+  .bg-blue-1 {
+    width: 52vw;
+    height: 52vw;
+  }
+  .bg-orange {
+    width: 52vw;
+    height: 52vw;
+  }
+  .bg-red {
+    width: 52vw;
+    height: 52vw;
+  }
+}
 @keyframes moveHorizontally {
   from {
     transform: translateX(0);
