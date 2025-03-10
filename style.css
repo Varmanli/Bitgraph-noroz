@@ -217,11 +217,33 @@ content hero section
   gap: 20px;
   justify-content: start;
   align-items: center;
+  margin-top: 20px;
 }
 .buttons-hero button {
   border-radius: 15px;
   padding: 10px 34px;
   font-size: 17px;
+  cursor: pointer;
+}
+.button-1 {
+  background-color: #fff;
+  border: #fff solid 2px;
+}
+.button-1:hover {
+  background-color: #ffffff00;
+  color: #fff;
+  border: #fff solid 2px;
+  transition: 1s;
+}
+.button-2 {
+  background-color: #ffffff00;
+  color: #fff;
+  border: #fff solid 2px;
+}
+.button-2:hover {
+  background-color: #fff;
+  transition: 1s;
+  color: #150b20;
 }
 @media (max-width: 900px) {
   .buttons-hero {
@@ -244,13 +266,14 @@ content hero section
 }
 
 .text-hero-container h2 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .text-hero-container p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
-  width: 575px;
+  width: 579px;
+  letter-spacing: 0;
 }
 @media (max-width: 900px) {
   .text-hero-container {
