@@ -63,11 +63,11 @@ body {
 }
 @media (max-width: 900px) {
   .list-header {
-    gap: 16px;
-    padding: 10px 16px;
+    gap: 13px;
+    padding: 10px 13px;
   }
   .list-header li {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 /* 
@@ -180,6 +180,7 @@ content hero section
 @media (max-width: 900px) {
   .timer{
     padding-right: 0px;
+    gap: 35px;
   }
 }
 /* button hero */
@@ -197,6 +198,10 @@ content hero section
 @media (max-width: 900px) {
   .buttons-hero {
     margin-top: 20px;
+    flex-direction: column;
+  }
+  .buttons-hero button{
+    width: 240px;
   }
 }
 .text-hero-container {
@@ -220,7 +225,7 @@ content hero section
 }
 @media (max-width: 900px) {
   .text-hero-container {
-    padding: 10px;
+    padding: 4px;
     justify-content: center;
     align-items: center;
   }
@@ -228,12 +233,13 @@ content hero section
     font-size: 30px;
   }
   .text-hero-container h2 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .text-hero-container p{
-    font-size: 17px;
+    font-size: 13px;
     width:fit-content;
     text-align: center;
+    padding: 0 13px;
   }
 }
 /* seke */
@@ -255,16 +261,16 @@ content hero section
 
 @media (max-width: 900px) {
   .sabze-img {
-    width: 440px;
+    width: 380px;
   }
   .img-hero .seke-2 {
-    width: 60px;
-    height: 60px;
-    top: 64%;
+    width: 55px;
+    height: 55px;
+    top: 62%;
   }
   .img-hero .seke-1 {
-    width: 74px;
-    height: 74px;
-    top: 58%;
+    width: 70px;
+    height: 70px;
+    top: 54%;
   }
 }
