@@ -1,5 +1,5 @@
 // تاریخ مورد نظر برای شمارش معکوس
-const targetDate = new Date("2025-03-30T00:00:00").getTime();
+const targetDate = new Date("2025-03-20T00:00:00").getTime();
 
 // تابع تبدیل اعداد لاتین به فارسی
 function convertToPersianNumbers(str) {

@@ -350,3 +350,266 @@ content hero section
     transform: translateX(0);
   }
 }
+
+/* section multi curse */
+
+.multi-curse-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+.head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.head-multi {
+  font-weight: bold;
+  font-size: 27px;
+}
+.head-multi span {
+  font-weight: normal;
+  color: #ffce31;
+}
+.course__buttons {
+  display: flex;
+  gap: 20px;
+}
+.course__button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-align: center;
+  transition: background 0.3s;
+}
+.course-buttons-row {
+  display: flex;
+  gap: 20px;
+}
+.course__button-1 {
+  background-color: #ffe8e8;
+  color: #ab3636;
+}
+.course__button-2 {
+  background-color: #fff3c3;
+  color: #6d5f5f;
+}
+.course__button-3 {
+  background-color: #e8ffe8;
+  color: #40ca85;
+}
+.course__button-4 {
+  background-color: #fff7e4;
+  color: #aaa637;
+}
+.course__button-5 {
+  background-color: #ffe4f7;
+  color: #aaa637;
+}
+.course__button-6 {
+  background-color: #e8f4ff;
+  color: #3867bd;
+}
+
+.multi-image-price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.price-container .multi-name {
+  color: #ffce31;
+  font-weight: bold;
+  font-size: 50px;
+}
+.price-original {
+  color: #ff0f0f;
+  text-decoration: line-through;
+  text-decoration-color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.price-discounted {
+  color: #22b45c;
+  font-size: 25px;
+  font-weight: bold;
+}
+.price-container button {
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ffffff00;
+  border: #fff solid 2px;
+}
+.price-container button:hover {
+  background-color: #fff;
+  transition: 1s;
+  color: #150b20;
+}
+.img-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: border-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.img-container:hover {
+  border-image-source: linear-gradient(
+    135.6deg,
+    rgba(255, 255, 255, 0.1) 0.54%,
+    rgba(255, 255, 255, 0.5) 100.51%
+  );
+  border-image-slice: 1;
+  border-color: rgba(255, 255, 255, 0.5);
+  transition-delay: 0.3s;
+  -webkit-mask-image: none;
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.img-container .curse-img {
+  position: relative;
+  z-index: 10;
+  width: 500px;
+  height: 500px;
+}
+.circle-multi {
+  position: absolute;
+  border-radius: 80%;
+  filter: blur(120px);
+  opacity: 0.8;
+}
+.bg-green {
+  width: 80%;
+  height: 70%;
+  top: 10%;
+  left: 10%;
+  background: #23c156;
+}
+.img-container .money-img {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  width: 130px;
+}
+.img-container .money-img1 {
+  position: absolute;
+  left: 15%;
+  top: 16%;
+  width: 120px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.img-container .money-img2 {
+  position: absolute;
+  left: 21%;
+  top: 28%;
+  width: 100px;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.img-container:hover .money-img1 {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.img-container:hover .money-img2 {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .head-container {
+    text-align: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .head-container .p-multi {
+    font-size: 15px;
+  }
+  .head-multi {
+    font-size: 28px;
+  }
+  .course__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  .course-buttons-row {
+    gap: 10px;
+  }
+  .course__button {
+    padding: 4px 5px;
+    font-size: 10px;
+  }
+  .multi-image-price-container {
+    flex-direction: column;
+  }
+
+  .img-container {
+    order: -1;
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+  }
+  .img-container .curse-img {
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+  }
+  .img-container .money-img {
+    width: 80px;
+  }
+  .img-container .money-img1 {
+    width: 70px;
+    top: 13%;
+  }
+  .img-container .money-img2 {
+    width: 50px;
+    top: 20%;
+  }
+}
