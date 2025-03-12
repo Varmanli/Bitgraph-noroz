@@ -40,3 +40,25 @@ const countdown = setInterval(() => {
     seconds.toString().padStart(2, "0")
   );
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", function () {
+  let observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let animationName = entry.target.getAttribute("data-animate");
+          if (animationName) {
+            entry.target.style.animation = `${animationName} 0.8s cubic-bezier(0.7, 0, 0.3, 1) forwards`;
+            entry.target.style.opacity = "1";
+            observer.unobserve(entry.target);
+          }
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll(".animated-section").forEach((section) => {
+    observer.observe(section);
+  });
+});
