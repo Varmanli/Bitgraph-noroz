@@ -644,7 +644,7 @@ content hero section
   width: 50vw;
   height: 40vw;
   top: 0;
-  right: -20%;
+  right: -26%;
   background: #ff7c1d;
   position: absolute;
   border-radius: 50%;
@@ -760,4 +760,102 @@ content hero section
     padding: 10px 12px;
     font-size: 12px;
   }
+}
+/* commnet section */
+.commnet-section {
+  position: relative;
+  height: 500px;
+}
+.circle-comment {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(300px);
+  opacity: 0.7;
+  transform-origin: center;
+}
+.circle-blue {
+  width: 120vh;
+  height: 100vh;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  background: #4620cd;
+  animation: swapPosition 20s infinite ease-in-out alternate;
+}
+.circle-red {
+  width: 120vh;
+  height: 100vh;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  background: #f53232;
+  animation: swapPositionReverse 20s infinite ease-in-out alternate;
+}
+@keyframes swapPosition {
+  0% {
+    transform: translateX(0) translateY(-50%);
+  }
+  50% {
+    transform: translateX(10%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+@keyframes swapPositionReverse {
+  0% {
+    transform: translateX(0) translateY(-50%);
+  }
+  50% {
+    transform: translateX(-10%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(0) translateY(-50%);
+  }
+}
+.comment-title {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 60px;
+  font-size: 30px;
+}
+.comment-box {
+  background-color: #21123159;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px 50px;
+  padding-top: 70px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .comment-box {
+    width: 96%;
+  }
+}
+.comment-img {
+  position: absolute;
+  top: -20%;
+}
+.comment-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.comment-pr {
+  text-align: center;
+}
+.comment-cr {
+  text-align: center;
+  font-weight: bold;
 }
