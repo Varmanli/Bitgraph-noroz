@@ -724,6 +724,11 @@ content hero section
   color: #22b45c;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .price-original-course .price-discounted-course {
+    font-size: 12px;
+  }
+}
 .cart-button {
   border-radius: 15px;
   padding: 10px 20px;
@@ -737,4 +742,9 @@ content hero section
   background-color: #fff;
   transition: 1s;
   color: #150b20;
+}
+@media (max-width: 768px) {
+  .cart-button {
+    padding: 8px 10px;
+  }
 }
