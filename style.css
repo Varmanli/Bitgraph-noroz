@@ -710,13 +710,13 @@ content hero section
 }
 .cart-price-sec {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 40px;
 }
 @media (max-width: 768px) {
   .cart-price-sec {
-    gap: 10px;
+    gap: 40px;
   }
 }
 .price-original-course {
@@ -730,8 +730,11 @@ content hero section
   font-weight: bold;
 }
 @media (max-width: 768px) {
-  .price-original-course .price-discounted-course {
-    font-size: 12px;
+  .price-original-course {
+    font-size: 14px;
+  }
+  .price-discounted-course {
+    font-size: 14px;
   }
 }
 .cart-button {
@@ -750,6 +753,7 @@ content hero section
 }
 @media (max-width: 768px) {
   .cart-button {
-    padding: 8px 10px;
+    padding: 10px 12px;
+    font-size: 12px;
   }
 }
