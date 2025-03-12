@@ -389,6 +389,8 @@ content hero section
 .course__buttons {
   display: flex;
   gap: 20px;
+  position: relative;
+  z-index: 10;
 }
 .course__button {
   padding: 8px 10px;
@@ -433,6 +435,8 @@ content hero section
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative;
+  z-index: 10;
 }
 .price-container {
   display: flex;
