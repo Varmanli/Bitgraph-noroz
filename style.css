@@ -822,6 +822,11 @@ content hero section
   margin-top: 60px;
   font-size: 30px;
 }
+@media (max-width: 768px) {
+  .comment-title {
+    font-size: 25px;
+  }
+}
 .comment-box {
   background-color: #21123159;
   border-radius: 20px;
