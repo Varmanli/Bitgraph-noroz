@@ -714,6 +714,11 @@ content hero section
   align-items: center;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .cart-price-sec {
+    gap: 10px;
+  }
+}
 .price-original-course {
   color: #ff0f0f;
   text-decoration: line-through;
