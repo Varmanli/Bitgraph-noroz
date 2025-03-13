@@ -25,6 +25,7 @@
 body {
   background-color: #150b20;
   color: #fff;
+  
 }
 .section-hero {
   height: 100vh;
@@ -794,6 +795,12 @@ content hero section
   transform: translateY(-50%);
   background: #f53232;
   animation: swapPositionReverse 20s infinite ease-in-out alternate;
+}
+@media (max-width: 768px) {
+  .circle-blue, .circle-red {
+    width: 90vw; 
+    height: 80vh;
+  }
 }
 @keyframes swapPosition {
   0% {
