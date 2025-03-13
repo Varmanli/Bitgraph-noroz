@@ -62,3 +62,47 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+const slides = document.querySelectorAll(".comment-box");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+let currentSlide = 0;
+let slideInterval;
+
+// نمایش اسلایدها
+function showSlide(index) {
+  slides.forEach((slide, idx) => {
+    slide.style.transition = 'transform 0.6s ease-in-out';
+    slide.style.transform = `translateX(${100 * (idx - index)}%)`;
+  });
+}
+
+// اسلاید بعدی
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+function startSlider() {
+  clearInterval(slideInterval);
+  slideInterval = setInterval(nextSlide, 6000);
+}
+
+nextBtn.addEventListener("click", () => {
+  nextSlide()
+  startSlider(); 
+});
+
+prevBtn.addEventListener("click", () => {
+  prevSlide();
+  startSlider(); 
+});
+
+showSlide(currentSlide);
+startSlider();
+

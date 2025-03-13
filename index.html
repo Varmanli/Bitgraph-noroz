@@ -8,6 +8,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
     <title>Bitgraph</title>
   </head>
   <body>
@@ -79,7 +84,7 @@
     </section>
     <!-- multi curce -->
     <section class="multi-curse-section animated-section">
-      <div class="multi-ani">
+      <div class="multi-ani" data-aos="fade-down" data-aos-duration="500">
         <div class="head-container">
           <p class="head-multi">
             محبوب ترین دوره گرافیک <span>(۸ دوره آموزشی در یک پکیج)</span>
@@ -114,16 +119,15 @@
           </div>
         </div>
       </div>
-
       <div class="multi-image-price-container">
-        <div class="img-container">
+        <div class="img-container" data-aos="fade-left">
           <div class="circle-multi bg-green"></div>
           <img src="./img/multi-curse.png" alt="course" class="curse-img" />
           <img src="/img/money.png" alt="money" class="money-img" />
           <img src="/img/money1.png" alt="money" class="money-img1" />
           <img src="/img/money2.png" alt="money" class="money-img2" />
         </div>
-        <div class="price-container">
+        <div class="price-container" data-aos="fade-right">
           <p class="multi-name">دوره جامع مولتی</p>
           <div>
             <p class="price-original">۱۰/۲۵۰ میلیون تومان</p>
@@ -135,7 +139,9 @@
     </section>
     <!-- COURSE SECTION -->
     <section class="course-section">
-      <h3 class="course-section-title">ویترین دوره های تخصصی با تخفیف نوروز</h3>
+      <h3 class="course-section-title" data-aos="fade-up">
+        ویترین دوره های تخصصی با تخفیف نوروز
+      </h3>
       <div class="circle-course"></div>
       <div class="cart-container">
         <div class="course-cart">
@@ -271,35 +277,102 @@
       <div class="circle-comment circle-blue"></div>
       <div class="circle-comment circle-red"></div>
       <h4 class="comment-title">نظرات شما دانشجویان در مورد ما</h4>
-      <div class="comment-box">
-        <img
-          src="./img/avatar.png"
-          alt="avatar"
-          width="96"
-          height="96"
-          class="comment-img"
-        />
-        <div class="comment-div">
-          <p class="comment-pr">
-            دوره های بیت گرف از نظر جامع بودن سرفصل ها، واقعا کامل هستند. بنده
-            در دوره های فتوشاپ، پریمیر ،‌افترافکت و ... شرکت کرده ام. آکادمی بیت
-            گرف بهترین تو کل ایرانه! مخصوصا تو بخش پشتیبانی که سنگ تموم
-            گذاشتید...
-          </p>
-          <p class="comment-cr">مریم کریمی</p>
+
+      <div class="slider-container">
+        <!-- Slide 1 -->
+        <div class="comment-box active">
+          <img
+            src="./img/avatar.png"
+            alt="avatar"
+            width="96"
+            height="96"
+            class="comment-img"
+          />
+          <div class="comment-div">
+            <p class="comment-pr">
+              دوره های بیت گرف از نظر جامع بودن سرفصل ها، واقعا کامل هستند. بنده
+              در دوره های فتوشاپ، پریمیر ،‌افترافکت و ... شرکت کرده ام. آکادمی
+              بیت گرف بهترین تو کل ایرانه! مخصوصا تو بخش پشتیبانی که سنگ تموم
+              گذاشتید...
+            </p>
+            <p class="comment-cr">مریم کریمی</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="comment-box">
+          <img
+            src="./img/avatar2.png"
+            alt="avatar"
+            width="96"
+            height="96"
+            class="comment-img"
+          />
+          <div class="comment-div">
+            <p class="comment-pr">
+              دوره‌های بیت گرف واقعاً فراتر از انتظار بود! از جزئیات تا نکات
+              حرفه‌ای، همه‌چیز عالی تدریس شده. ممنون از تیم فوق‌العاده‌تون! برای
+              اولین بار توی یک دوره آموزشی، احساس کردم واقعاً دارم به سطح
+              حرفه‌ای نزدیک می‌شم. آموزش‌ها عمیق و کاربردی هستن. عالی بود!
+            </p>
+            <p class="comment-cr">رضا باقری</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="comment-box">
+          <img
+            src="./img/avatar3.png"
+            alt="avatar"
+            width="96"
+            height="96"
+            class="comment-img"
+          />
+          <div class="comment-div">
+            <p class="comment-pr">
+              هم پشتیبانی قوی، هم محتوای آموزشی فوق‌العاده! یادگیری با بیت گرف
+              تجربه‌ای متفاوت و جذابه. پیشنهاد می‌کنم شک نکنید! سبک تدریس،
+              پشتیبانی و نحوه ارائه محتوا توی بیت گرف واقعاً حرفه‌ای و
+              منحصربه‌فرده. دوره‌ها از صفر تا صد کامل و جامع هستن. از زمانی که
+              با بیت گرف آشنا شدم، مسیر کاری و پروژه‌هام متحول شده! مهارت‌هایی
+              که اینجا یاد گرفتم، مستقیماً تو بازار کار بهم کمک کرده.
+            </p>
+            <p class="comment-cr">مهران رضایی</p>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="comment-box">
+          <img
+            src="./img/avatar4.png"
+            alt="avatar"
+            width="96"
+            height="96"
+            class="comment-img"
+          />
+          <div class="comment-div">
+            <p class="comment-pr">
+              "باورتون نمی‌شه که چقدر نکات کاربردی تو این دوره‌ها گفته می‌شه!
+              انگار کنار یه استاد حرفه‌ای نشستی و دارن تجربیاتشون رو بدون سانسور
+              بهت منتقل می‌کنن من قبلاً چندین دوره شرکت کرده بودم، ولی هیچ‌کدوم
+              به این اندازه جزئیات و پشتیبانی قوی نداشتن. بیت گرف یک سر و گردن
+              از بقیه بالاتره!
+            </p>
+            <p class="comment-cr">آرزو کبیری</p>
+          </div>
         </div>
       </div>
+
       <div class="nav-button">
-        <i>
+        <i id="nextBtn">
           <img src="./img/VectorRight.svg" alt="icon" width="20" height="20" />
         </i>
-        <i>
+        <i id="prevBtn">
           <img src="./img/VectorLeft.svg" alt="icon" width="20" height="20" />
         </i>
       </div>
     </section>
     <!-- software section -->
-    <section class="software">
+    <section class="software" data-aos="fade-up">
       <h4>آموزش تخصصی نرم افزارهای گرافیکی</h4>
       <div class="app-container">
         <div class="app-row">
@@ -400,16 +473,16 @@
     <!-- footer -->
     <footer>
       <div class="top-footer">
-        <div class="top-footer-pr">
+        <div class="top-footer-pr" data-aos="fade-left">
           <p class="footer-comment">
             <span><img src="./img/Chat.svg" alt="" /></span> بیشترین نظر
           </p>
           <p class="footer-comment-2">«کاش از اول با شما آشنا می شدم!»</p>
           <p class="footer-top-p"><span>شغل آینده</span> شما اینجاست!</p>
         </div>
-        <div class="top-footer-star">
+        <div class="top-footer-star" data-aos="fade-right">
           <img src="./img/star.png" alt="star" />
-          <p class="top-footer-star-p">+6200 نظر دانشجویان (4.9 از ۵)</p>
+          <p>+6200 نظر دانشجویان (4.9 از ۵)</p>
         </div>
       </div>
       <div class="media">
@@ -488,7 +561,14 @@
       </p>
       <div class="circle-footer"></div>
     </footer>
-
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: "ease-out-cubic", // بهترین ترمز
+        once: true,
+      });
+    </script>
   </body>
 </html>
