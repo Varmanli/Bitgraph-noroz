@@ -22,9 +22,11 @@
   border: 0;
   font-family: "YekanBakh", sans-serif;
 }
-body {
+html body {
   background-color: #150b20;
   color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .section-hero {
   height: 100vh;
